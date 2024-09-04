@@ -2,15 +2,45 @@
 <html lang="en">
 <head>
     <title>table</title>
+    <style>
+        body {
+            margin: auto;
+            margin-top: 20px;
+            width: 500px;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            width: 500px;
+        }
+
+        button {
+            margin: 20px;
+        }
+
+        th {
+            background-color: aquamarine;
+        }
+
+        img {
+            width: 70px;
+        }
+
+    </style>
 </head>
+
 <body>
-    <table border="1" width="0%" cellpadding="5" cellspacing="0">
+    <div class="container">
+    <h1>Daftar Produk</h1>
+    <button>Tambah</button>
+    <table class="tbl" border="1">
         <thead>
             <tr>
-                <th bgcolor="yellow">No</th>
-                <th bgcolor="yellow">Nama</th>
-                <th bgcolor="yellow">Harga</th>
-                <th bgcolor="yellow">Gambar</th>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Harga</th>
+                <th>Gambar</th>
             </tr>
         </thead>
         <tbody>
@@ -18,33 +48,34 @@
                 <td>1</td>
                 <td>Boneka Jerapah</td>
                 <td>Rp 100.000,00</td>
-                <td><img src="Jerapah.jpg" width="100px"/></td>
+                <td><img src="Jerapah.jpg"/></td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Boneka Kelinci</td>
                 <td>Rp 100.000,00</td>
-                <td><img src="Kelinci.jpg" width="100px"/></td>
+                <td><img src="Kelinci.jpg"/></td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Boneka Naga</td>
                 <td>Rp 100.000,00</td>
-                <td><img src="Naga.jpg" width="100px"/></td>
+                <td><img src="Naga.jpg"/></td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>Boneka Gajah</td>
                 <td>Rp 100.000,00</td>
-                <td><img src="Gajah.jpg" width="100px"/></td>
+                <td><img src="Gajah.jpg"/></td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>Boneka Katak</td>
                 <td>Rp 100.000,00</td>
-                <td><img src="Katak.jpg" width="100px"/></td>
+                <td><img src="Katak.jpg"/></td>
             </tr>
         </tbody>
     </table>
+    </div>
 </body>
 </html>
