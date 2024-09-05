@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            display: flex;
+        
+
+        .container {
+            width: 1000px;
             margin: auto;
-            margin-top: 20px;
-            width: 300px;
+            margin-top: 40px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 250px;
+        }
+
+        .form-input {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
         }
 
         .btn {
-            margin-top: 5px;
-            margin-left: 110px;
+            text-align: right;
         }
     </style>
 </head>
@@ -22,58 +35,54 @@
     <div class="container">
         <h1>Tambah Barang</h1>
 
-        <div class="nama">
-            <form>
-                <label for="fnama">Nama</label><br>
-                <input type="text" name="fnama" id="fnama">
-            </form>
-        </div>
+        <div class="form-container">       
+            <div class="form-input">
+                
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama">
+            </div>
 
-        <div class="kode">
-            <form>
-                <label for="fkode">Kode</label><br>
-                <input type="text" name="fkode" id="fkode">
-            </form>
-        </div>
+            <div class="form-input">
+                
+                    <label for="kode">Kode</label>
+                    <input type="text" name="kode" id="kode">               
+            </div>
 
-        <div class="Tanggal Masuk">
-            <form>
-                <label for="fmasuk">Tanggal Masuk</label><br>
-                <input type="text" name="fmasuk" id="fmasuk">
-            </form>
-        </div>
+            <div class="form-input">
+                
+                    <label for="masuk">Tanggal Masuk</label>
+                    <input type="date" name="masuk" id="masuk">                
+            </div>
 
-        <div class="Tanggal Expired">
-            <form>
-                <label for="fexp">Tanggal Masuk</label><br>
-                <input type="text" name="fexp" id="fexp">
-            </form>
-        </div>
+            <div class="form-input">
+                
+                    <label for="exp">Tanggal Expired</label>
+                    <input type="date" name="exp" id="exp">                
+            </div>
 
-        <div class="Jumlah Stock">
-            <form>
-                <label for="fstock">Tanggal Masuk</label><br>
-                <input type="text" name="fstock" id="fstock">
-            </form>
-        </div>
+            <div class="form-input">                
+                    <label for="stock">Stock</label>
+                    <input type="text" name="stock" id="stock">                
+            </div>
 
-        <div class="Harga Beli">
-            <form>
-                <label for="fbeli">Harga Beli</label><br>
-                <input type="text" name="fbeli" id="fbeli">
-            </form>
-        </div>
+            <div class="form-input">
+                
+                    <label for="beli">Harga Beli</label>
+                    <input type="text" name="beli" id="beli">
+                
+            </div>
 
-        <div class="Harga Jual">
-            <form>
-                <label for="fjual">Harga Jual</label><br>
-                <input type="text" name="fjual" id="fjual">
-            </form>
-        </div>
+            <div class="form-input">
+                
+                    <label for="jual">Harga Jual</label>
+                    <input type="text" name="jual" id="jual">
+                
+            </div>
 
-        <div class="btn">
-            <button>Simpan</button>
-        </div>
+            <div class="btn">
+                <button>Simpan</button>
+            </div>
+        </div> 
     </div>
 </body>
 </html>
